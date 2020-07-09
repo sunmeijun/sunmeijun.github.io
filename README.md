@@ -24,16 +24,13 @@
 
 3、天津市支撑计划重点项目，肿瘤患者的影像大数据诊疗和分析平台，合作单位天津市医科大学肿瘤医院，2015/04-2017/09，230万，结题，主持。
 
-4、故宫博物院横向课题，故宫博物院兰亭序书法互动系统的研究，2013/09-2015/09, 在研，主持。
+4、故宫博物院横向课题，故宫博物院兰亭序书法互动系统的研究，2013/09-2015/09, 完成，主持。
 
-5、国家自然科学基金青年基金（批准号：61003201），面向中国水墨画的艺术风格学习及效果生成的关键算法研究，2011/01-2013/12，已结题，主持。
+略...
 
-6、国家自然科学基金国际合作与交流项目（批准号：612010015），基于高光谱图像技术的中国水墨画艺术风格的分析与建模， 2012/04-2014/03，已结题，主持。
-
-7、天津大学自主创新基金（标志性成果培育），中国水墨画的计算机仿真绘制，2011.9.1-2013.9.1，已结题，主持。
-
-8、诺基亚公司产学研合作课题，基于嵌入式系统的中国水墨画解决方案，2011.7.31-2011.9.31，已结题，主持。
-
-9、国家自然科学基金课题（批准号：61472276），互联网有限监督信息下的通用图像语义理解机制研究，2015/01-2018/12，在研，参加人。
-
-10、国家自然科学基金青年基金（批准号：61202165），基于对象识别与挖掘技术的视频水墨风格化算法研究，2013.1.1-2015.12.31，在研，参加人。
+**近期主要论文**
+1.	Ziqi Zhou, Zheng Wang, Huchuan Lu, Song Wang, **Meijun Sun**, Multi-type Self-attention Guided Degraded Saliency Detection, AAAI 2020（CCF A会长文）
+2. Zheng Wang, Xinyu Yan, Yahong Han*, **Meijun Sun**, Ranking Video Salient Object Detection, ACM Multimedia, 2019,（CCF A会长文）
+3. **Meijun Sun**, Z. Zhou, Q. Hu, Z. Wang*, and J. Jiang, “Sg-fcn: A motion and memory-based deep learning model for video saliency detection,” IEEE Transactions on Cybernetics, vol. PP, no. 99, pp. 1–12, 2018. （SCI 1区，IF=10.387，双检）
+4. **Meijun Sun**, Dong Zhang, Zheng Wang, Jinchang Ren, Jess S.Jin, Monte Carlo Convex Hull Model for Classification of Traditional Chinese Paintings, Neurocomputing, 2016,171(c):788-797  (2区SCI, IF=3.317)
+5. **Meijun Sun**, Dong Zhang, Zheng Wang, Jinchang Ren, Bolong Chai, Jizhou Sun, What's Wrong with Murals at Mogao Grottoes: a Near-Infrared Hyperspectral Image Method, Scientific Reports, 2015, 5(1):14371 (2区SCI, IF=5.578,)
