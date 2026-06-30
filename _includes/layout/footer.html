@@ -12,8 +12,8 @@
     <div class="site-footer__col">
       <h2 class="site-footer__title">联系</h2>
       <ul class="site-footer__list">
-        <li><span class="site-footer__key">地址</span><span>{{ c.address }}</span></li>
-        <li><span class="site-footer__key">电话</span><span>{{ c.phone }}</span></li>
+        {%- if c.address %}<li><span class="site-footer__key">地址</span><span>{{ c.address }}</span></li>{%- endif %}
+        {%- if c.phone %}<li><span class="site-footer__key">电话</span><span>{{ c.phone }}</span></li>{%- endif %}
         <li><span class="site-footer__key">邮箱</span><a href="mailto:{{ c.email }}">{{ c.email }}</a></li>
         {%- if c.bilibili %}<li><span class="site-footer__key">B 站</span><span>{{ c.bilibili }}</span></li>{%- endif %}
       </ul>
