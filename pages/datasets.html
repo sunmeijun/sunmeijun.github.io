@@ -1,0 +1,22 @@
+---
+layout: page
+title: 数据集
+subtitle: Datasets
+permalink: /datasets/
+active_nav: datasets
+description: 孙美君课题组自建数据集。
+---
+{%- assign dss = site.datasets | sort: 'order' -%}
+<section class="section" data-reveal>
+  <header class="section-head">
+    <h2 class="section-title">自建数据集<span class="section-title__en">Datasets</span></h2>
+  </header>
+  {% if dss.size == 0 %}
+  <p class="prose empty-state">数据集即将上线。</p>
+  {% else %}
+  <p class="prose lead">实验室围绕智能电网、智慧管网、智慧敦煌等场景自建的数据集（当前为占位骨架，真实数据陆续补充）。</p>
+  <div class="card-grid">
+    {%- for d in dss %}{% include components/dataset-card.html dataset=d %}{% endfor %}
+  </div>
+  {% endif %}
+</section>

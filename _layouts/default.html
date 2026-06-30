@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: 'zh-CN' }}" class="no-js">
+{%- include layout/head.html -%}
+<body class="{% if page.url == '/' %}is-home{% endif %}">
+  <div class="scroll-progress" aria-hidden="true"></div>
+  <a class="skip-link" href="#main">跳到主要内容</a>
+  {%- include layout/site-header.html -%}
+  <main id="main">
+    {{ content }}
+  </main>
+  {%- include layout/footer.html -%}
+</body>
+</html>

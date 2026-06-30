@@ -1,36 +1,56 @@
-![](smj.jpg)孙美君（教授、博导） 简历
+# 孙美君课题组 · 个人主页
 
-天津大学，计算机科学与技术学院，教授，博士生导师
+天津大学 孙美君 教授课题组（记忆与推理课题组）主页。基于 **Jekyll**（GitHub Pages 原生支持，无需本地构建工具链），内容与样式解耦、数据驱动，按职责分目录，便于维护与扩展。
 
-孙美君博士自05年参加工作至今为天津大学计算机学院教师。主要研究方向为智能媒体技术，计算机视觉和计算机图形学，2008年作为联合培养博士研究生在法国国家信息与自动化研究所（INRIA）访问学习，2015年美国南卡罗莱纳大学访问学者。已在国内外高水平刊物和会议上发表论文40余篇。作为项目负责人完成国家自然科学基金3项，天津市支撑计划重点项目1项。申请国家软件发明专利6项，设计与开发的中国水墨画的计算机仿真技术获得2008年天津市技术发明二等奖。
+## 板块（导航）
 
--   **联系方式：QQ：23432949，邮箱sunmeijun@tju.edu.cn，天津大学北洋园校区55楼A214**
+首页 · 论文 · 项目 · 成员 · Datasets —— 导航在 `_data/nav.yml` 统一维护。
 
--   **招收对人工智能、计算机视觉、图像视频分析、软件工程方向感兴趣的博士、硕士和有意向在实验室深造的本科同学。**
+## 如何更新内容（基本不用碰 HTML / CSS）
 
--   **培养学生的思路：我们实验室的宗旨是培养具有开阔眼界、创新思维、优秀编程能力、优秀论文写作、优秀表达能力和优秀道德品质的人。**
+| 想做的事 | 改哪个文件 |
+|---|---|
+| 改个人简介 / 头衔 / 联系方式 | `_data/site_info.yml` |
+| 加一条实验室动态 | `_data/news.yml`（在最上面加一项） |
+| 加一篇论文 | `_data/publications.yml`（追加一条） |
+| 加一项科研课题 | `_data/grants.yml`（追加一条） |
+| 加 / 改成员、校友、培养理念 | `_data/members.yml` |
+| 加一个项目（含详情页） | 在 `_projects/` 新建一个 `xxx.md`（照现有文件填字段） |
+| 加一个数据集（含详情页） | 在 `_datasets/` 新建一个 `xxx.md` |
+| **加一个全新板块** | `_data/nav.yml` 加一项 + 在 `pages/` 建一个同名页面（设好 `permalink:`） |
 
--   **实验室日常：真实项目+高水平论文+实验室日常管理+团队活动**
+> 加内容 = 编辑数据文件；加板块 = 一条导航 + 一个薄页面。不产生重复、强耦合的代码。
 
--   **实验室文化：实事求是，团结协作，做事情有态度有强度！**
+## 目录结构（按职责划分）
 
--   **实验室条件：保证工位、台式机和GPU服务器、支持成果突出的同学申请国奖、支持发表高水平论文的同学出国参会、每月助学金、助教等一些额外工作的奖金。**
+```
+_config.yml             站点配置（Jekyll 约定，必须在根）
+_data/                  内容数据（YAML）—— 站点的“数据库”
+_includes/
+  ├── layout/           页面外壳组件：head / masthead / nav / footer
+  └── components/       可复用 UI 组件：project-card / member-card / publication-item / dataset-card
+_layouts/               页面骨架：default / page / project / dataset
+pages/                  页面源文件：home / publications / projects / members / datasets / 404
+                        （输出 URL 由各文件的 permalink 决定，根目录不再散落 HTML）
+_projects/              项目集合：每个 .md = 一个详情页（/projects/<slug>/）并自动进入列表
+_datasets/              数据集集合：同上（/datasets/<slug>/）
+assets/
+  ├── css/site.css      全站样式（设计变量集中在 :root，便于整体视觉改版）
+  └── img/              图片（ASCII 命名）
+README.md  robots.txt
+```
 
-**主持或参加科研项目及人才计划项目情况：**
+**职责边界一目了然**：配置 / 数据 / 组件（外壳 vs 复用）/ 骨架 / 页面 / 集合 / 资源 各司其职。
+URL 为层级化干净路径：`/`、`/publications/`、`/projects/`（列表）+ `/projects/<slug>/`（详情）。
 
-1、国家自然科学基金面上项目，面向癌症检测的小样本高光谱图像分类理论研究， 2019/01-2022/12，在研，主持。
+## 本地预览
 
-2、国家自然科学基金面上项目，61572351，基于高光谱图像分析的古代壁画病害监测及艺术风格化恢复方法研究，2016/01-2019/12，结题，主持。
+```bash
+jekyll serve        # 浏览 http://localhost:4000
+```
 
-3、天津市支撑计划重点项目，肿瘤患者的影像大数据诊疗和分析平台，合作单位天津市医科大学肿瘤医院，2015/04-2017/09，230万，结题，主持。
+GitHub Pages 会在推送到 `master` 后自动用 Jekyll 构建并发布，无需手动操作。
 
-4、故宫博物院横向课题，故宫博物院兰亭序书法互动系统的研究，2013/09-2015/09, 完成，主持。
+---
 
-略...
-
-**近期主要论文**
-1.	Ziqi Zhou, Zheng Wang, Huchuan Lu, Song Wang, **Meijun Sun**, Multi-type Self-attention Guided Degraded Saliency Detection, AAAI 2020（CCF A会长文）
-2. Zheng Wang, Xinyu Yan, Yahong Han*, **Meijun Sun**, Ranking Video Salient Object Detection, ACM Multimedia, 2019,（CCF A会长文）
-3. **Meijun Sun**, Z. Zhou, Q. Hu, Z. Wang*, and J. Jiang, “Sg-fcn: A motion and memory-based deep learning model for video saliency detection,” IEEE Transactions on Cybernetics, vol. PP, no. 99, pp. 1–12, 2018. （SCI 1区，IF=10.387，双检）
-4. **Meijun Sun**, Dong Zhang, Zheng Wang, Jinchang Ren, Jess S.Jin, Monte Carlo Convex Hull Model for Classification of Traditional Chinese Paintings, Neurocomputing, 2016,171(c):788-797  (2区SCI, IF=3.317)
-5. **Meijun Sun**, Dong Zhang, Zheng Wang, Jinchang Ren, Bolong Chai, Jizhou Sun, What's Wrong with Murals at Mogao Grottoes: a Near-Infrared Hyperspectral Image Method, Scientific Reports, 2015, 5(1):14371 (2区SCI, IF=5.578,)
+> 当前视觉为**基础骨架**（结构正确、响应式、中性配色）。后续整体视觉优化主要调整 `assets/css/site.css` 的设计变量与组件样式，无需改动内容与结构。

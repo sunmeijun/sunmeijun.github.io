@@ -1,0 +1,13 @@
+{%- assign info = site.data.site_info -%}
+<header class="masthead" data-reveal>
+  <div class="masthead__bar wrap">
+    <a class="wordmark" href="{{ '/' | relative_url }}" aria-label="{{ info.group_name }} 首页">
+      <img class="wordmark__seal" src="{{ '/assets/img/tju-seal.png' | relative_url }}" alt="天津大学校徽" width="30" height="28" decoding="async">
+      <span class="wordmark__text">
+        <span class="wordmark__zh">{{ info.group_name }}</span>
+        <span class="wordmark__en">Memory&nbsp;&amp;&nbsp;Reasoning Lab · Tianjin University</span>
+      </span>
+    </a>
+    {% include layout/nav.html %}
+  </div>
+</header>

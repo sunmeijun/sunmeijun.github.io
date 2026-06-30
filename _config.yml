@@ -1,0 +1,34 @@
+# ── Site ──────────────────────────────────────────────────────────────
+title: 孙美君课题组
+description: 天津大学 孙美君 教授课题组 —— 大模型与智能体、智能电网预测与控制算法、开放环境下多模态视觉技术
+lang: zh-CN
+url: "https://sunmeijun.github.io"
+baseurl: ""
+
+# ── Build ─────────────────────────────────────────────────────────────
+markdown: kramdown
+encoding: utf-8
+
+# ── Collections ───────────────────────────────────────────────────────
+# 加一个项目 / 数据集 = 在对应目录下新增一个 .md 文件，自动生成详情页并被列表收录。
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name/
+  datasets:
+    output: true
+    permalink: /datasets/:name/
+
+# ── Front-matter defaults ─────────────────────────────────────────────
+defaults:
+  - scope: { path: "", type: "projects" }
+    values: { layout: project, active_nav: projects }
+  - scope: { path: "", type: "datasets" }
+    values: { layout: dataset, active_nav: datasets }
+
+# ── Exclude from build ────────────────────────────────────────────────
+exclude:
+  - README.md
+  - REFACTOR-PLAN.md
+  - .gitignore
+  - 近期项目和论文.docx
