@@ -46,7 +46,14 @@ URL 为层级化干净路径：`/`、`/publications/`、`/projects/`（列表）
 ## 本地预览
 
 ```bash
-jekyll serve        # 浏览 http://localhost:4000
+bundle install
+bundle exec jekyll serve        # 浏览 http://localhost:4000
+```
+
+若本机未安装 Ruby，可使用 Docker：
+
+```bash
+docker run --rm -it -p 4000:4000 -v "${PWD}:/site" -w /site ruby:3.3 bash -lc "bundle install && bundle exec jekyll serve --host 0.0.0.0"
 ```
 
 GitHub Pages 会在推送到 `master` 后自动用 Jekyll 构建并发布，无需手动操作。

@@ -18,12 +18,15 @@ node_modules/
 _site/
 .jekyll-cache/
 .jekyll-metadata
+.jekyll-serve.log
+.jekyll-serve-error.log
 
 # Claude Code local settings
 .claude/settings.local.json
 
 # Local-only working doc (refactor plan / remaining visual-pass notes)
 REFACTOR-PLAN.md
+docs/superpowers/
 
 # 导师整理的源文档（仅作数据来源，不发布）
 近期项目和论文.docx

@@ -355,6 +355,9 @@ body.is-scrolled .masthead{background:rgba(9,12,17,.86);border-bottom-color:var(
 @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(242,168,29,.5)}70%{box-shadow:0 0 0 9px rgba(242,168,29,0)}100%{box-shadow:0 0 0 0 rgba(242,168,29,0)}}
 .recruit__lead{position:relative;z-index:1;font-size:1.12rem;line-height:1.8;margin:0 0 1.4rem;color:var(--ink);max-width:54rem}
 .recruit__lead strong{color:var(--gold-2)}
+.recruit__group{position:relative;z-index:1;max-width:54rem}
+.recruit__group + .recruit__group{margin-top:1.8rem}
+.recruit__group-title{margin:0 0 .8rem;font-size:1.05rem;letter-spacing:.08em;color:var(--gold-2)}
 .recruit .bullet-list{position:relative;z-index:1;max-width:54rem;margin:0}
 .recruit .bullet-list li{color:var(--ink-2)}
 .recruit__actions{position:relative;z-index:1;margin-top:1.8rem;display:flex;flex-wrap:wrap;gap:.9rem}
